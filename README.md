@@ -77,6 +77,8 @@ Ce projet est un système de login simple développé avec Django. Il permet aux
 login/
     ├── accounts/
     │   ├── migrations/
+    |   |   ├── 0001_initial.py
+    │   │   └── __init__.py
     │   ├── static/
     │   │   └── accounts/
     │   │       ├── css/
