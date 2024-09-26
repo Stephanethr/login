@@ -73,7 +73,7 @@ Ce projet est un système de login simple développé avec Django. Il permet aux
 ```
 
 ## Structure du Projet
-
+```plaintext
 login/
     ├── accounts/
     │   ├── migrations/
@@ -95,4 +95,3 @@ login/
     │   └── wsgi.py
     ├── manage.py
     └── README.md
-
