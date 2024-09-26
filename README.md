@@ -32,41 +32,41 @@ Ce projet est un système de login simple développé avec Django. Il permet aux
    git clone <url_du_dépôt>
    cd login
 
-### Créer un environnement virtuel :
+2. **Créer un environnement virtuel** :
 
-```
-python -m venv .venv
-```
+   ```bash
+   python -m venv .venv
+   
 
-## Activer l'environnement virtuel :
+3. **Activer l'environnement virtuel** :
 
-### Sur Windows :
+   ### Sur Windows :
 
-```
-.venv\Scripts\activate
-```
+      ```bash
+      .venv\Scripts\activate
+      ```
 
-### Sur macOS/Linux :
+   ### Sur macOS/Linux :
 
-```
-source .venv/bin/activate
-```
+      ```bash
+      source .venv/bin/activate
+      ```
 
-### Installer les dépendances :
+4. **Installer les dépendances** :
 
-```
-pip install django
-```
+   ```bash
+   pip install django
+   ```
 
-### Configurer la base de données : Exécuter les migrations pour créer les tables nécessaires dans la base de données :
+5. **Configurer la base de données : Exécuter les migrations pour créer les tables nécessaires dans la base de données** :
 
-```
+```bash
 python manage.py migrate
 ```
 
 ### Lancer le serveur de développement :
 
-```
+```bash
     python manage.py runserver
 
     Accédez à l'application via http://127.0.0.1:8000.
