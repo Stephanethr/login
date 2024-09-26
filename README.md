@@ -67,10 +67,10 @@ Ce projet est un système de login simple développé avec Django. Il permet aux
 ### Lancer le serveur de développement :
 
 ```bash
-    python manage.py runserver
-
-    Accédez à l'application via http://127.0.0.1:8000.
+python manage.py runserver
 ```
+Accédez à l'application via http://127.0.0.1:8000.
+
 
 ## Structure du Projet
 ```plaintext
