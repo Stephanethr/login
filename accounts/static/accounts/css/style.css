@@ -1,0 +1,7 @@
+#ok {
+    width: 80%; /* Ajuste la largeur à 80% du conteneur */
+    max-width: 600px; /* Limite la largeur maximale à 600px */
+    height: auto; /* Conserve le ratio d'aspect */
+    display: block; /* Nécessaire pour centrer l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
+}
