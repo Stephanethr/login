@@ -80,18 +80,27 @@ login/
     │   ├── static/
     │   │   └── accounts/
     │   │       ├── css/
+    │   │       |   └── style.css
     │   │       └── images/
+    │   │           └── ok.png
     │   ├── templates/
     │   │   └── accounts/
+    │   │       ├── home.html
+    │   │       ├── login.html
+    │   │       └── register.html
     │   ├── __init__.py
     │   ├── admin.py
     │   ├── apps.py
     │   ├── models.py
     │   ├── tests.py
+    │   ├── urls.py
     │   └── views.py
     ├── login/
+    │   ├── __init__.py
+    │   ├── asgi.py
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
+    ├── db.sqlite3
     ├── manage.py
     └── README.md
