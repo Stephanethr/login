@@ -29,7 +29,7 @@ Ce projet est un système de login simple développé avec Django. Il permet aux
 
 1. **Cloner le dépôt** :
    ```bash
-   git clone <url_du_dépôt>
+   git clone git@github.com:Stephanethr/login.git
    cd login
 
 2. **Créer un environnement virtuel** :
@@ -60,9 +60,9 @@ Ce projet est un système de login simple développé avec Django. Il permet aux
 
 5. **Configurer la base de données : Exécuter les migrations pour créer les tables nécessaires dans la base de données** :
 
-```bash
-python manage.py migrate
-```
+   ```bash
+   python manage.py migrate
+   ```
 
 ### Lancer le serveur de développement :
 
