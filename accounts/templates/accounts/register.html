@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="{% static 'accounts/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'accounts/css/register.css' %}">
 </head>
 <body>
+<div>
     <h2>Register</h2>
     <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Register</button>
     </form>
-
+    <p>Vous avez déjà un compte ? <a href="{% url 'login' %}">Se connecter</a></p>
     {% if messages %}
         <ul>
         {% for message in messages %}
-            <li>{{ message }}</li>
+            <li class="{{ message.tags }}">{{ message }}</li>
         {% endfor %}
         </ul>
     {% endif %}
+    </div>
 </body>
 </html>
