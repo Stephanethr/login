@@ -1,0 +1,61 @@
+/* Style général de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style pour le titre */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Style du formulaire de confirmation */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style du bouton de confirmation */
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545; /* Rouge pour la suppression */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #c82333; /* Couleur plus foncée au survol */
+}
+
+/* Style pour le lien d'annulation */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    background-color: #007bff; /* Couleur bleu pour annuler */
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:hover {
+    background-color: #0056b3; /* Couleur plus foncée au survol */
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'inventory/css/form.css' %}">
+    <title>Inventaire</title>
+</head>
+<h1>{{ form.instance.pk|yesno:"Modifier un objet,Ajouter un objet" }}</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">{{ form.instance.pk|yesno:"Modifier,Ajouter" }}</button>
+</form>
+<a href="{% url 'objet_list' %}">Retour à la liste</a>
+
+</html>

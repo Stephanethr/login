@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'inventory/css/list.css' %}">
+    <title>Inventaire</title>
+</head>
+<h1>Inventaire</h1>
+<a href="{% url 'objet_create' %}">Ajouter un objet</a>
+<ul>
+    {% for objet in objets %}
+        <li>{{ objet.nom }} - {{ objet.type_objet }} - Quantité: {{ objet.quantite }}
+            <a href="{% url 'objet_update' objet.pk %}">Modifier</a> |
+            <a href="{% url 'objet_delete' objet.pk %}">Supprimer</a>
+        </li>
+    {% endfor %}
+</ul>
+
+</html>
