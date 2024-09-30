@@ -55,7 +55,7 @@ Ce projet est un système de login simple développé avec Django. Il permet aux
 4. **Installer les dépendances** :
 
    ```bash
-   pip install django
+   pip install -r requirements.txt
    ```
 
 5. **Configurer la base de données : Exécuter les migrations pour créer les tables nécessaires dans la base de données** :
@@ -105,4 +105,5 @@ login/
     │   └── wsgi.py
     ├── db.sqlite3
     ├── manage.py
-    └── README.md
+    ├── README.md
+    └── requirements.txt
