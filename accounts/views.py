@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import User
 from .forms import LoginForm, RegisterForm
 from django.contrib import messages
+from inventaire.models import Objet
 
 def register_view(request):
     if request.method == 'POST':
@@ -35,4 +36,5 @@ def login_view(request):
     return render(request, 'accounts/login.html', {'form': form})
 
 def home_view(request):
-    return render(request, 'accounts/home.html')
+    objets = Objet.objects.all()
+    return render(request, 'inventaire/objet_list.html', {'objets': objets})
